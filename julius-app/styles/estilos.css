@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'negrito';
+    src: url(../fonts/KumbhSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/KumbhSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    color: #3a3a3a;
+}
+
+:root {
+    --cor-destaque: #5333ed;
+}
+
+/* MARCA */
+
+#marca {
+    background-color: white;
+    padding: 10px;
+}
+
+#marca * {
+    vertical-align: middle;
+}
+
+#marca img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#marca span {
+    font-size: 150%;
+    font-family: 'negrito';
+    color: var(--cor-destaque);
+}
+
+/* HEADER */
+
+#header {
+    background-image: linear-gradient(to right, #4d13d1, #59ebe3);
+    padding: 50px 10px 30px 30px;
+    color: white;
+}
+
+#boasVindas {
+    font-family: 'padrao';
+    font-size: 500%;
+    display: block;
+}
+
+#slogan {
+    font-family: 'padrao';
+    font-size: 200%;
+}
+
+/* CONTAINER */
+
+#container {
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* SEÇÃO ESQUERDA */
+
+#esquerda {
+    width: 60%;
+    padding: 10px;
+}
+
+#lancamentos {
+    font-family: 'negrito';
+    font-size: 200%;
+}
+
+#novoLancamento {
+    font-family: 'negrito';
+    float: right;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-size: 140%;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.4s;
+}
+
+#novoLancamento:hover {
+    background-color: #1d00b1;
+    border-radius: 0;
+    transition: 0.4s;
+}
+
+#formularioLancamento {
+    display: none;
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'padrao';
+    transition: 0.7ms;
+}
+
+#formularioLancamento input {
+    display: block;
+    margin: 5px 0 20px 0;
+    border: 1px solid #cccccc;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'padrao';
+    font-size: 110%;
+    padding-left: 10px;
+}
+
+#blocoTipoLancamento {
+    margin: 5px 0 20px 0;
+}
+
+#blocoTipoLancamento input {
+    display: inline;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+#blocoTipoLancamento label {
+    vertical-align: middle;
+    font-family: 'negrito';
+    font-size: 120%;
+    margin-right: 20px;
+}
+
+#descricao {
+    width: 70%;
+}
+
+#botaoLancar {
+    border: none;
+    outline: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-family: 'negrito';
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 130%;
+    transition: 0.4s;
+}
+
+#botaoLancar:hover {
+    border-radius: 0;
+    background-color: #1d00b1;
+    transition: 0.4s;
+}
+
+#areaLancamentos {
+    margin-top: 30px;
+}
+
+.blocoLancamento {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.blocoLancamento img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.descricaoLancamento {
+    float: right;
+    text-align: right;
+}
+
+.descricaoLancamento span {
+    display: block;
+    font-family: 'padrao';
+}
+
+.valor {
+    font-family: 'negrito' !important;
+    font-size: 200%;
+}
+
+.gasto {
+    color: red;
+}
+
+.entrada {
+    color: #22aff0;
+}
+
+#limparListaLancamentos {
+    display: none;
+    font-family: 'negrito';
+    float: right;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    font-size: 140%;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    margin-top: 10px;
+    outline: none;
+    transition: 0.4s;
+}
+
+#limparListaLancamentos:hover {
+    background-color: #a72c00;
+    border-radius: 0;
+    transition: 0.4s;
+}
+
+/* SEÇÃO DA DIREITA */
+
+#direita {
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+    text-align: right;
+    font-family: 'negrito';
+}
+
+#direita img {
+    width: 30px;
+}
+
+#labelRenda {
+    font-size: 250%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#renda {
+    font-size: 500%;
+}
